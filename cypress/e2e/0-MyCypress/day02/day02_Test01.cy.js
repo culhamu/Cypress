@@ -3,4 +3,5 @@ context('context kullanimi', () => {
        cy.visit('https://www.google.com')
        cy.title().should('contains','Google')
     });
+    
 });
