@@ -12,11 +12,7 @@ TEST  – 1 Pozitif
 8-  Çıkış yapıldığını doğrula
 
 
-TEST-2 Negatif
-1-  http://www.automationexercise.com 
-2-  Signup/Login sayfasına git
-3-  baba71@gmail.com 123456 ile giriş yap
-4-  Giriş yapılamadığını doğrula 
+
 */
 
 describe('', () => {

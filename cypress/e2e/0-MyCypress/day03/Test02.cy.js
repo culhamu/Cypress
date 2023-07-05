@@ -16,5 +16,6 @@ cy.get('[data-qa="login-email"]').type('baba71@gmail.com')
 cy.get('[data-qa="login-password"]').type('123456{enter}')
 cy.get('.login-form > form > p').should('include.text','Your email or password is incorrect!')
 cy.log('Negatif Login Testi Yapildi')
+
     });
 });
