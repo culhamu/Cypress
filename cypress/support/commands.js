@@ -30,3 +30,11 @@ Cypress.Commands.add('QualityDemyLogin', (username, pass) => {
     cy.get('#login-password').type(pass)
     cy.get('#sign_up > :nth-child(3) > .btn').click()
  })
+
+ Cypress.Commands.add('AmazonSearch', (productName) => {
+
+    cy.visit('https://amazon.com')
+    cy.get('#twotabsearchtextbox').type(productName)
+    cy.get('#nav-search-submit-button').click()
+    cy.get('#twotabsearchtextbox').should('have.value',productName)
+ })
