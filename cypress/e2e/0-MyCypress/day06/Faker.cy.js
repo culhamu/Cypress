@@ -53,6 +53,7 @@ describe('Faker Kullanimi', () => {
         cy.get('[data-qa="mobile_number"]').type(phone)
 
         cy.get('[data-qa="create-account"]').click()
+        cy.get('b').should('have.text','CREATED!')
 
  
 
