@@ -18,6 +18,7 @@ describe('', () => {
         cy.get('.large-4 > div').should('contains.text','Elemental Selenium')
         cy.log('Sayfa girşi doğrulandı')
         cy.screenshot()
+        
     
     });
 
