@@ -1,9 +1,22 @@
-import Homepage from "./LoginPage.cy";
-
-describe('POM ile login', () => {
+import Homepage from "../../POM/Homepage.cy";
+import LoginPage from "../../POM/LoginPage.cy";
+describe('POM ile Login', () => {
     it('Login testi', () => {
-        const homepage = new Homepage()
-        cy.visit('https://qa.qualitydemy.com/')
-        homepage.getLoginlink
+        const homePage = new Homepage()
+        const loginPage=new LoginPage()   
+       
+        //cy.get('.btn-sign-in-simple').click()
+        homePage.getVisit()
+        homePage.getLoginlink().click()
+        loginPage.getUserEmail()
+        loginPage.getPasswordBox()
+        loginPage.getLoginButton()
+        loginPage.getAssert()
+        
     });
+    
 });
+
+
+
+
