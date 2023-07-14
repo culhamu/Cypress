@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test_dashboard":"npx cypress run --record --key a7cbfd77-d018-4ac0-aa71-07041457d611",
-    "dashboard_day04":"npx cypress run --spec 'cypress/e2e/day04 --record --key a7cbfd77-d018-4ac0-aa71-07041457d611"
+    "test_dashboard": "npx cypress run --record --key a7cbfd77-d018-4ac0-aa71-07041457d611",
+    "dashboard_day04": "npx cypress run --spec 'cypress/e2e/day04 --record --key a7cbfd77-d018-4ac0-aa71-07041457d611"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +13,7 @@
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.4",
     "@faker-js/faker": "^8.0.2",
+    "@playwright/test": "^1.36.0",
     "cypress": "^12.17.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-iframe": "^1.0.1",
