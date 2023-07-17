@@ -8,4 +8,11 @@ describe('JSon Api Assertion', () => {
         cy.request(requestUrl)
         .its('headers').its('date').should('include','Fri')
     });
+
+    it('Api Assertion 2', () => {
+        cy.request({
+            url:requestUrl,
+            method: 'GET'
+        }).its('headers').its('date').should('include','Fri')
+    });
 });
